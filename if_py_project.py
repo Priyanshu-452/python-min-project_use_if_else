@@ -8,4 +8,5 @@ def eligibility_checker(age):
     else:
          return"not eligible"
 data["eligibility"] = data["age"].apply(eligibility_checker)   
-print(data)      
+print(data)
+data.to_csv("emplyee_data.csv")      
